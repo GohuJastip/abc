@@ -12,13 +12,23 @@
             background-color: #ffffff;
         }
         /* Header */
-        .header {
+        .header-container {
+            display: flex;
+            align-items: center;
             background-color: #000;
-            color: #ff8da1;
+            color: #f6647e; /* Sesuaikan dengan warna logo */
             padding: 10px;
-            text-align: center;
+            text-align: left;
+        }
+        .logo {
+            width: 55px;
+            height: 50px;
+            margin-right: 10px; /* Memberi jarak antara logo dan teks */
+        }
+        .header-text {
             font-size: 24px;
             font-weight: bold;
+            color: #f6647e; /* Sesuaikan dengan warna logo */
         }
         /* Navbar */
         .navbar {
@@ -26,12 +36,14 @@
             justify-content: center;
             background-color: #000;
             padding: 10px 0;
+            position: relative; /* Untuk memanipulasi posisi */
+            top: -10px; /* Geser navbar ke atas */
         }
         .navbar a {
             color: #ffffff;
             margin: 0 15px;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 14px;
         }
         .navbar a:hover {
             text-decoration: underline;
@@ -46,10 +58,10 @@
             color: #000;
         }
         .content h1 span {
-            color: #ff8da1;
+            color: #f6647e;
         }
         .tagline {
-            background-color: #ff8da1;
+            background-color: #f6647e;
             color: #ffffff;
             padding: 5px 10px;
             display: inline-block;
@@ -65,23 +77,15 @@
             max-width: 600px;
             border-radius: 10px;
         }
-        /* Logo */
-        .logo {
-            position: absolute;
-            top: 20px;
-            left: 15px;
-            width: 55px;
-            height: 50px;
-        }
     </style>
 </head>
 <body>
 
-    <!-- Logo -->
-    <img src="SG.png" alt="Logo Sagu Jastip" class="logo">
-
     <!-- Header -->
-    <div class="header">Sagu Jastip</div>
+    <div class="header-container">
+        <img src="SG.png" alt="Logo Sagu Jastip" class="logo">
+        <div class="header-text">Sagu Jastip</div>
+    </div>
 
     <!-- Navbar -->
     <div class="navbar">
