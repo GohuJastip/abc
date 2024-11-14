@@ -11,42 +11,27 @@
             padding: 0;
             background-color: #ffffff;
         }
-        /* Header */
-        .header-container {
-            display: flex;
-            align-items: center;
-            background-color: #000;
-            color: #f6647e; /* Sesuaikan dengan warna logo */
-            padding: 10px;
-            text-align: left;
-        }
-        .logo {
-            width: 55px;
-            height: 50px;
-            margin-right: 10px; /* Memberi jarak antara logo dan teks */
-        }
-        .header-text {
-            font-size: 24px;
-            font-weight: bold;
-            color: #f6647e; /* Sesuaikan dengan warna logo */
-        }
         /* Navbar */
         .navbar {
             display: flex;
-            justify-content: center;
+            justify-content: space-between; /* Membuat elemen tersebar di kiri dan kanan */
+            align-items: center; /* Vertikal center untuk logo dan teks */
             background-color: #000;
-            padding: 10px 0;
-            position: relative; /* Untuk memanipulasi posisi */
-            top: -10px; /* Geser navbar ke atas */
+            padding: 10px 20px;
         }
         .navbar a {
             color: #ffffff;
             margin: 0 15px;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 14px; /* Ukuran font lebih kecil */
         }
         .navbar a:hover {
             text-decoration: underline;
+        }
+        .logo {
+            width: 55px;
+            height: 50px;
+            margin-right: 20px; /* Memberikan jarak antara logo dan link */
         }
         /* Content */
         .content {
@@ -54,19 +39,19 @@
             padding: 20px;
         }
         .content h1 {
-            font-size: 32px;
+            font-size: 24px; /* Ukuran font lebih kecil untuk h1 */
             color: #000;
         }
         .content h1 span {
-            color: #f6647e;
+            color: #ff8da1;
         }
         .tagline {
-            background-color: #f6647e;
+            background-color: #ff8da1;
             color: #ffffff;
             padding: 5px 10px;
             display: inline-block;
             margin-top: 10px;
-            font-size: 16px;
+            font-size: 14px; /* Ukuran font lebih kecil untuk tagline */
         }
         .image-container {
             text-align: center;
@@ -81,17 +66,17 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <div class="header-container">
-        <img src="SG.png" alt="Logo Sagu Jastip" class="logo">
-        <div class="header-text">Sagu Jastip</div>
-    </div>
-
-    <!-- Navbar -->
+    <!-- Navbar with Logo -->
     <div class="navbar">
-        <a href="#">Chat Admin</a>
-        <a href="#">Alamat Jastip</a>
-        <a href="#">Cek Paket</a>
+        <!-- Logo -->
+        <img src="SG.png" alt="Logo Sagu Jastip" class="logo">
+        
+        <!-- Menu items (pindah ke kanan) -->
+        <div>
+            <a href="#">Chat Admin</a>
+            <a href="#">Alamat Jastip</a>
+            <a href="#">Cek Paket</a>
+        </div>
     </div>
 
     <!-- Content -->
